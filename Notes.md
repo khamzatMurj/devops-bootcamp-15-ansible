@@ -17,7 +17,14 @@ Ansible advantages:
 Ansible is agentless. It connects to remote servers using simple SSH, no special agent is required.
 
 ### Ansible Modules
-A module is a reusable, standalone script (in yaml format) that Ansible runs on your behalf. Modules are fine granular, performing one small specific task like creating or copying a file, installing an nginx server, starting an nginx server, starting a Docker container, creating a cloud instance, etc. Ansible provides hundreds of Modules for all sorts of tasks. Modules get pushed to the target server, do their work and get removed again.
+A module is a reusable, standalone script (in yaml format) that Ansible runs on your behalf. 
+
+Modules are fine granular, performing one small specific task like creating or copying a file, installing an nginx server, starting an nginx server, starting a Docker container, creating a cloud instance, etc. 
+
+Ansible provides hundreds of Modules for all sorts of tasks. Modules get pushed to the target server, do their work and get removed again.
+
+<img width="1693" height="1011" alt="image" src="https://github.com/user-attachments/assets/b31bf837-dd85-4831-82ac-dbb5a1a7afe1" />
+
 
 ### Ansible Playbooks
 A Playbook groups multiple modules together, which get executed in order from top to bottom. With a Playbook, you can orchestrate steps of any manual ordered process.
@@ -86,6 +93,7 @@ web2.myserver.com
 ### Ansible for Docker
 With Ansible you can create alternative to Dockerfile, which is more powerful. It lets you manage both the Docker container and its host. I also allows you to reproduce the application not only in a Docker container but across many other environments like a Vagrant container, a clound instance, a bare metal machine, etc. 
 
+
 ### Ansible Tower
 Ansible Tower is a web-based solution from RedHat that makes Ansible more easy to use. It simplifies tasks like
 - centrally store automation tasks
@@ -93,8 +101,13 @@ Ansible Tower is a web-based solution from RedHat that makes Ansible more easy t
 - configure permissions
 - manage inventory
 
+<img width="1794" height="1004" alt="image" src="https://github.com/user-attachments/assets/df925346-37a4-4f04-8f7d-bcaa4a7bae07" />
+
+
 ### Alternatives
-Alternatives for Ansible are Puppet and Chef. But they use Ruby as their configuration language which needs more efford to learn than yaml. And the are not agentless, so you have to install the tool on each server you want to manage, and you need to manage updates of these tools on each server. These may be reasons why Ansible has become more widely accepted.
+Alternatives for Ansible are **Puppet** and **Chef**. But they use **Ruby** as their configuration language which needs more efford to learn than **yaml**. 
+
+And the are not **_agentless_**, so you have to install the tool on each server you want to manage, and you need to manage updates of these tools on each server. These may be reasons why Ansible has become more widely accepted.
 
 </details>
 
