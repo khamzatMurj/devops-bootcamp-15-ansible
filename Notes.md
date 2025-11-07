@@ -154,10 +154,14 @@ On Linux servers Ansible requires Python to be installed. This is already the ca
 <summary>Video: 4 - Ansible Inventory and Ansible ad-hoc commands</summary>
 <br />
 
-The Ansible Inventory is a file containing data about the remote hosts and how to connect to them:
+The **`Ansible Inventory`** is a file containing data about the remote hosts and how to connect to them:
 - Host IP-address or Host DNS-name
 - SSH Private Key
 - SSH User
+
+> You have to create a file called host
+>
+>  vim host
 
 ```yaml
 209.38.196.102 ansible_ssh_private_key_file=~/.ssh/id_ed25519 ansible_user=root
